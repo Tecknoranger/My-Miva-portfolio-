@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ayomikun Davidson</title>
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header"><a class="logo" href="index.html">Ayomikun Davidson</a><button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button><nav id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav></header>
+    <main>
+      <h1>Contact me</h1>
+      <section class="section">
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email">
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="text" id="phone" name="phone">
+            <span class="error" id="phoneError"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+          <p id="formSuccess" class="success"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 Ayomikun Davidson &middot; COS 106 LAB Project &middot; MIVA Open University</p></footer>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
